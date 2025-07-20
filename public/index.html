@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="todo-container">
+    <h1>YC & PP's To-Do List</h1>
+    <div id="todo-progress-bar" class="todo-progress-bar"><div id="todo-progress-inner" class="todo-progress-inner"></div></div>
+    <div id="todo-stats" class="todo-stats"></div>
+    <form id="todo-form">
+      <select id="todo-type" required>
+        <option value="">选择分类</option>
+        <option value="美食">美食</option>
+        <option value="娱乐">娱乐</option>
+        <option value="旅游地点">旅游地点</option>
+        <option value="学习">学习</option>
+        <option value="其他">其他</option>
+      </select>
+      <input type="text" id="todo-input" placeholder="添加新任务..." required />
+      <button type="submit">添加</button>
+    </form>
+    </div>
+  <div id="todo-columns" class="todo-columns"></div>
+  <!-- 分类分列任务列表 -->
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
